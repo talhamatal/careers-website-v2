@@ -13,14 +13,23 @@
     </style>
   </head>
   <body>
+    {%include 'nav.html'%}
     <div class="container">
       <h1 class="text-center mt-2 mb-4"> 
         {{company_name}} Careers
       </h1>
       <img class="img-fluid" id="banner" src="https://careers-website-1.talhamatal.repl.co/static/banner_new.jpg">
       <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique. Faucibus vitae aliquet nec ullamcorper sit. Tincidunt augue interdum velit euismod in pellentesque massa. Id faucibus nisl tincidunt eget nullam. In ornare quam viverra orci sagittis. Velit egestas dui id ornare arcu odio ut sem. Justo eget magna fermentum iaculis eu non diam phasellus. In hac habitasse platea dictumst vestibulum rhoncus est. Euismod quis viverra nibh cras pulvinar. Eu non diam phasellus vestibulum lorem. Rhoncus est pellentesque elit ullamcorper. Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Pulvinar pellentesque habitant morbi tristique senectus et.</p>
+      <div class="row" style="margin-bottom:16px;">
+        <div class="col-md-6">
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique. Faucibus vitae aliquet nec ullamcorper sit. Tincidunt augue interdum velit euismod in pellentesque massa. Id faucibus nisl tincidunt eget nullam. In ornare quam viverra orci sagittis. Velit egestas dui id ornare arcu odio ut sem. Justo eget magna fermentum iaculis eu non diam phasellus. In hac habitasse platea dictumst vestibulum rhoncus est. Euismod quis viverra nibh cras pulvinar. Eu non diam phasellus vestibulum lorem. Rhoncus est pellentesque elit ullamcorper. Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Pulvinar pellentesque habitant morbi tristique senectus et.
+          </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+          <img class="img-fluid" src='/static/people_new.jpg',style="height: 360px width: 360px; border-radius:4px">
+        </div> 
+      </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       <div >
         {%for job in jobs%}
@@ -28,9 +37,9 @@
         {% endfor %}
       </div>
       <div class="text-center">  
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2022, Talman</p>
+        <a class="btn btn-primary btn-lg" href="mailto:talha_matal@yahoo.com?subject=Question%20about%20Job%20Openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Questions%3A%20%3CEnter%20question%20here%3E">Contact Us</a>
       </div>
-    </div> 
+    </div>
+    {%include 'footer.html'%}
   </body>
 </html>
